@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 
@@ -20,6 +21,12 @@ namespace VaccinationInfoProvider.UserManagement {
             repository.AddUser(user);
             //File.AppendAllText("users1.txt", JsonConvert.SerializeObject(user));
             return user;
+        }
+
+        /// <inheritdoc />
+        public IList<User> GetAllUsers() {
+            //todo:// just create users from JArray in repository and return.
+            throw new NotImplementedException();
         }
     }
 }

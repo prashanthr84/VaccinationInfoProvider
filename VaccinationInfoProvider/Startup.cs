@@ -29,6 +29,7 @@ namespace VaccinationInfoProvider
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.TryAddSingleton<IUserManagement, UserManagement.UserManagement>();
             services.TryAddSingleton<IUserRepository, UserRepository>();
+            services.AddHostedService<VaccinationInfoFetcherService.VaccinationInfoFetcherService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

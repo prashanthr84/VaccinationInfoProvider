@@ -13,7 +13,7 @@ namespace VaccinationInfoProvider.VaccinationInfoFetcherService {
 
 
         public CronJobService() {
-            _expression = CronExpression.Parse("*/5****");
+            _expression = CronExpression.Parse("*/5****"); // Runs every 5 mins.
             _timeZoneInfo = TimeZoneInfo.Local;
         }
 
