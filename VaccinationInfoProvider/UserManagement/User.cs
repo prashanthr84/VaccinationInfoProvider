@@ -1,4 +1,6 @@
-﻿namespace VaccinationInfoProvider.UserManagement {
+﻿using System;
+
+namespace VaccinationInfoProvider.UserManagement {
     public class User {
 
         public User(string name, string email, string state, string district, string pinCode) {
@@ -18,5 +20,6 @@
         public string District { get; }
 
         public string PinCode { get; }
+        public string Id { get; set; }
     }
 }
